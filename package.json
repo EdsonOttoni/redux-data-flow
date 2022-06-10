@@ -11,6 +11,7 @@
     "@types/node": "^17.0.39",
     "@types/react": "^18.0.11",
     "@types/react-dom": "^18.0.5",
+    "date-fns": "^2.28.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-redux": "^8.0.2",
@@ -27,8 +28,15 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
-    ]
+      "react-app/jest",
+      "prettier"
+    ],
+    "plugins": [
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": "warn"
+    }
   },
   "browserslist": {
     "production": [
@@ -41,5 +49,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.6.2"
   }
 }
